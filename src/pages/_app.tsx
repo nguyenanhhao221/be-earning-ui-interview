@@ -6,10 +6,10 @@ import "../styles/globals.css";
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <>
-      <html data-theme="light">
+      <div data-theme="cupcake">
         <Headers />
         <Component {...pageProps} />
-      </html>
+      </div>
     </>
   );
 };

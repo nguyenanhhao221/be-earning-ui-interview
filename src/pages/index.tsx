@@ -7,6 +7,7 @@ import {
   BsBoxArrowUpRight,
   BsFillBellFill,
 } from "react-icons/bs";
+import { Tabs } from "../components/Tabs";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
             <NavigationButton Icon={BsFillBellFill} />
           </div>
         </div>
+        <Tabs />
       </main>
     </>
   );
