@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         "accent-blue-1": "#004DFF",
         "semantic-orange-3": "#FC9D00",
+        "neutral-semantic-purple-1": "#554CFF",
         "neutral-semantic-purple-3": "#CFCCFF",
         "neutral-1": "#04004D",
         "neutral-2": "#3F3D66",

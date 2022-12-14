@@ -10,9 +10,13 @@ import {
 import { Tabs } from "../components/Tabs";
 import { AllWallets } from "../components/AllWallets";
 import { Transactions } from "../components/Transactions";
+import { Popup } from "../components/Popup";
+import { useState } from "react";
 
 const Home: NextPage = () => {
   const mainTabs = ["My Wallet", "Report", "Settings"];
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
     <>
       <Head>
@@ -36,8 +40,10 @@ const Home: NextPage = () => {
         <section id="transactions">
           <Transactions />
         </section>
+        <section>
+          <Popup isPopupOpen={isPopupOpen} setIsPopupOpen={setIsPopupOpen} />
+        </section>
       </main>
-      <footer></footer>
     </>
   );
 };

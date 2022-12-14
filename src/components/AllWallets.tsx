@@ -11,7 +11,7 @@ const dummyData: TWalletInfo[] = [
 export const AllWallets = () => {
   return (
     <div className="overflow-x-scroll scrollbar-hide">
-      <ul className="min-w-screen flex gap-4">
+      <ul className="min-w-screen flex gap-4 md:justify-center">
         {dummyData.map((wallet) => (
           <li
             key={wallet.name}
