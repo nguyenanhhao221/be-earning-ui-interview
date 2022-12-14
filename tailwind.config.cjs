@@ -19,8 +19,13 @@ module.exports = {
         "neutral-1": "#04004D",
         "neutral-2": "#3F3D66",
         "neutral-3": "#667386",
+        "neutral-4": "#D3D7DB",
       },
     },
   },
-  plugins: [require("daisyui"), require("tailwind-scrollbar-hide")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui"),
+    require("tailwind-scrollbar-hide"),
+  ],
 };

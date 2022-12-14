@@ -19,11 +19,11 @@ export const Popup = ({ isPopupOpen, setIsPopupOpen }: Props) => {
         <span className="sr-only">Open Popup</span>
       </button>
       <div className="grid w-full grid-cols-5 gap-1">
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
       </div>
     </div>
   ) : (
@@ -34,22 +34,22 @@ export const Popup = ({ isPopupOpen, setIsPopupOpen }: Props) => {
       >
         <BsChevronCompactUp fill="#fff" className="h-8 w-8 " />
       </Link>
-      <div className="grid w-full grid-cols-5 gap-1 py-4">
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
-        <DApp />
+      <div className="grid w-full grid-cols-5 gap-x-1 gap-y-4 py-4 text-white">
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
+        <DApp isMainPage />
       </div>
     </div>
   );

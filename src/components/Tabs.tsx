@@ -8,7 +8,9 @@ type Props = {
 export const Tabs = ({ tabsData }: Props) => {
   // TODO Hard code for the active tabs, need to replace with actual logic check later
   return (
-    <ul className="tabs mt-7 mb-4 w-full justify-center px-8 xs:px-2">
+    <ul
+      className={`grids mt-7 mb-4 flex w-full whitespace-nowrap px-8 xs:px-2 grid-cols-[${tabsData.length}] place-content-center items-center`}
+    >
       {tabsData.map((tab, index) => (
         <li key={tab}>
           <Link
