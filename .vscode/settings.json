@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["MCOIN"]
+  "cSpell.words": ["MCOIN"],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

@@ -11,11 +11,11 @@ const dummyData: TWalletInfo[] = [
 export const AllWallets = () => {
   return (
     <div className="overflow-x-scroll scrollbar-hide">
-      <ul className="min-w-screen flex gap-4  ">
+      <ul className="min-w-screen flex gap-4">
         {dummyData.map((wallet) => (
           <li
             key={wallet.name}
-            className="flex w-48 flex-col gap-4 whitespace-nowrap rounded-xl border p-3 shadow-2xl"
+            className="card flex w-48 flex-col gap-4 whitespace-nowrap rounded-xl border p-3 drop-shadow-2xl"
           >
             <WalletCard walletInfo={wallet} />
           </li>

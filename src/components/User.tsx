@@ -9,7 +9,7 @@ export const User = () => {
         <Image
           src={AvatarImg}
           alt="user avatar"
-          className="avatar h-10 w-10 rounded-full object-contain object-center"
+          className="avatar h-10 w-10 rounded-full  object-center"
           placeholder="blur"
         />
 

@@ -11,3 +11,13 @@ export type TWalletInfo = {
   value: number;
   color: string;
 };
+
+export type TTransaction = {
+  id: string;
+  type: "receive" | "send";
+  value: number;
+  currency: string;
+  timestamp: string;
+  userImage?: string;
+  userName: string;
+};

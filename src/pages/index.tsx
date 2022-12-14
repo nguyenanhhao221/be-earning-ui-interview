@@ -9,8 +9,10 @@ import {
 } from "react-icons/bs";
 import { Tabs } from "../components/Tabs";
 import { AllWallets } from "../components/AllWallets";
+import { Transactions } from "../components/Transactions";
 
 const Home: NextPage = () => {
+  const mainTabs = ["My Wallet", "Report", "Settings"];
   return (
     <>
       <Head>
@@ -27,11 +29,15 @@ const Home: NextPage = () => {
             <NavigationButton Icon={BsFillBellFill} />
           </div>
         </div>
-        <section>
-          <Tabs />
+        <section className="pb-4">
+          <Tabs tabsData={mainTabs} />
           <AllWallets />
         </section>
+        <section id="transactions">
+          <Transactions />
+        </section>
       </main>
+      <footer></footer>
     </>
   );
 };
