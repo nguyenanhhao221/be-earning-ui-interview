@@ -57,7 +57,7 @@ const getRandomElements = (arr: string[], numOfElement: number): number[] => {
   return result;
 };
 
-const getFirst24Element = async (): Promise<TArr | undefined> => {
+export const get24SeedWords = async (): Promise<TArr | undefined> => {
   const endpoint = "https://metanode.co/json/eng.json";
   try {
     const res = await fetch(endpoint);
@@ -88,11 +88,9 @@ const getNext18 = (arr: TArr) => {
   return result;
 };
 
-export const getFinal6 = async () => {
-  const first24Element = await getFirst24Element();
-
-  if (first24Element) {
-    const next18Elements = getNext18(first24Element);
+export const getFinal6 = async (seedPhrase: TArr | undefined) => {
+  if (seedPhrase) {
+    const next18Elements = getNext18(seedPhrase);
 
     if (next18Elements) {
       const copyArr = [...next18Elements].filter(
@@ -119,5 +117,3 @@ export const getFinal6 = async () => {
     }
   }
 };
-
-getFinal6();

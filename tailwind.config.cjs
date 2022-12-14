@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       colors: {
         "accent-blue-1": "#004DFF",
+        "accent-blue-3": "#BBCFFB",
         "semantic-orange-3": "#FC9D00",
         "neutral-semantic-purple-1": "#554CFF",
         "neutral-semantic-purple-3": "#CFCCFF",
