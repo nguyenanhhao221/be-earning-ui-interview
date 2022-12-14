@@ -6,6 +6,7 @@ import type { TArr } from "../../../types";
 import { BsChevronLeft } from "react-icons/bs";
 import { get24SeedWords } from "../../utils/getData";
 import { AllSeedWords } from "../../components/AllSeedWords";
+import { CopySection } from "../../components/CopySection";
 
 const CreateNewWalletPage = ({
   data,
@@ -29,6 +30,9 @@ const CreateNewWalletPage = ({
         <h2 className="capitalize text-accent-blue-1">Auto Gen Seed Phrase?</h2>
         <section id="all-seed-words">
           <AllSeedWords allSeedWords={data} />
+        </section>
+        <section>
+          <CopySection />
         </section>
       </main>
     </>
