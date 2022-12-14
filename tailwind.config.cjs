@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       colors: {
         "accent-blue-1": "#004DFF",
+        "semantic-orange-3": "#FC9D00",
         "neutral-semantic-purple-3": "#CFCCFF",
         "neutral-1": "#04004D",
         "neutral-2": "#3F3D66",
@@ -20,5 +21,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwind-scrollbar-hide")],
 };

@@ -57,7 +57,7 @@ const getRandomElements = (arr: string[], numOfElement: number): number[] => {
   return result;
 };
 
-const getFirst24Element = async () => {
+const getFirst24Element = async (): Promise<TArr | undefined> => {
   const endpoint = "https://metanode.co/json/eng.json";
   try {
     const res = await fetch(endpoint);
@@ -82,6 +82,7 @@ const getFirst24Element = async () => {
 
 const getNext18 = (arr: TArr) => {
   const result = getRandomUniqueArrayOfIndex(18).map(
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     (element) => arr[element]!
   );
   return result;
@@ -94,7 +95,9 @@ export const getFinal6 = async () => {
     const next18Elements = getNext18(first24Element);
 
     if (next18Elements) {
-      const copyArr = [...next18Elements];
+      const copyArr = [...next18Elements].filter(
+        (element) => typeof element !== "undefined"
+      );
       const finalResult: TFinalArr = [];
       while (copyArr.length > 0) {
         const sub3Strings = copyArr.splice(0, 3).map(({ name }) => name);

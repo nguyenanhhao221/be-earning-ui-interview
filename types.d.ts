@@ -5,3 +5,9 @@ export type TFinalArr = {
   primary: number;
   "index-selected": number;
 }[];
+
+export type TWalletInfo = {
+  name: string;
+  value: number;
+  color: string;
+};

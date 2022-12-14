@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer utilities {
+  .text-secondary {
+    @apply text-sm text-neutral-3;
+  }
   .tab-bordered {
     @apply border-b-4;
   }

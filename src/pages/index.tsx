@@ -1,4 +1,4 @@
-import { type NextPage } from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
 import { NavigationButton } from "../components/NavigationButton";
 import { User } from "../components/User";
@@ -8,6 +8,7 @@ import {
   BsFillBellFill,
 } from "react-icons/bs";
 import { Tabs } from "../components/Tabs";
+import { AllWallets } from "../components/AllWallets";
 
 const Home: NextPage = () => {
   return (
@@ -26,7 +27,10 @@ const Home: NextPage = () => {
             <NavigationButton Icon={BsFillBellFill} />
           </div>
         </div>
-        <Tabs />
+        <section>
+          <Tabs />
+          <AllWallets />
+        </section>
       </main>
     </>
   );

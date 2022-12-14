@@ -15,7 +15,7 @@ export const User = () => {
 
         <div>
           <h4 className="text-lg text-neutral-1 xs:text-sm">Minh Nguyen</h4>
-          <p className="text-sm text-neutral-3">@Meta</p>
+          <p className="text-secondary">@Meta</p>
         </div>
       </div>
     </div>
